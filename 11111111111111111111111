@@ -1,0 +1,83 @@
+Q1. Write the program for return type in java.
+
+public class A {
+	public long m1(){
+	   return ...........;
+	}
+	public String m2(){
+	   return ..........;
+	}
+	public float m3(){
+	   return ........;
+	}
+	public char m4(){
+	   return .........;
+	}
+	public boolean m5(){
+	   return .......;
+	}
+	public A m6(){
+	   return ......;
+	}
+}
+public class Test {
+	public static void main(String[] args) 
+	{
+	     //Call all methods of A class
+	     // print all values of return method here
+	}
+}
+
+
+
+Ans=
+
+public class A                                                 //class 1
+{
+	public long m1()
+       {
+	   return 7798631788l;
+	}
+	public String m2()
+        {
+	   return "ajay";
+	}
+	public float m3()
+        {
+	   return 4.5f;
+	}
+	public char m4()
+        {
+	   return 'm';
+	}
+	public boolean m5()
+        {
+	   return true;
+	}
+	public A m6()
+        {
+	   return null;
+	}
+}
+
+public class Test {                                                          //class 2
+	public static void main(String[] args) 
+	{
+             A a = new A();
+             a.m1();                              //Call all methods of A class
+             a.m2();
+             a.m3();
+             a.m4();
+             a.m5();
+             a.m6();
+             System.out.println(a.m1()); 	     // print all values of return method here
+             System.out.println(a.m2());
+             System.out.println(a.m3());
+             System.out.println(a.m4());
+             System.out.println(a.m5());
+             System.out.println(a.m6());
+
+
+              
+	}
+}

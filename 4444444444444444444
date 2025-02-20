@@ -1,0 +1,71 @@
+// Q4. Write the code.
+
+public class Student 
+{
+	private int rollno;
+	private String name;
+     	//setter/getter;
+}
+public class Test 
+{
+	public ............. m1()
+	{
+		Student s=new Student();
+		//Set student data here
+	}
+	public static void main(String[] args) 
+	{
+		//get student data here
+	}
+}
+
+//ans=
+
+//Q4. Write the code.
+
+public class Student                           //class 1
+{
+	private int rollno;
+	private String name;
+        
+       public int getRollno()
+       {
+        return rollno;
+
+      }
+      public void setRollno(int rollno )
+       {
+        this.rollno= rollno;
+
+      }
+
+       public String  getName()
+       {
+        return name;
+
+      }
+      public void setName(String name )
+       {
+        this.name= name;
+
+      }
+
+}
+
+public class Test1                                       //class 2
+{
+	public Student m1()
+	{
+		Student s=new Student();                               //set data
+               s.setRollno(100);
+               s.setName("ajay");
+               return s;
+	}
+	public static void main(String[] args) 
+	{
+	  Test1	t = new Test1();
+          Student s = t.m1();
+           System.out.println(s.getRollno());
+           System.out.println(s.getName());                                            //get student data here
+	}
+}
